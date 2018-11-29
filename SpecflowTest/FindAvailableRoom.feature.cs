@@ -80,16 +80,12 @@ namespace SpecflowTest
         [Xunit.TheoryAttribute(DisplayName="Find available room")]
         [Xunit.TraitAttribute("FeatureTitle", "FindAvailableRoom")]
         [Xunit.TraitAttribute("Description", "Find available room")]
-        [Xunit.InlineDataAttribute("\'11/9/2018\'", "\'11/10/2018\'", "1", new string[0])]
-        [Xunit.InlineDataAttribute("\'11/24/2018\'", "\'11/27/2018\'", "1", new string[0])]
+        [Xunit.InlineDataAttribute("\'11/9/2019\'", "\'11/10/2019\'", "1", new string[0])]
+        [Xunit.InlineDataAttribute("\'11/24/2019\'", "\'11/27/2019\'", "1", new string[0])]
+        [Xunit.InlineDataAttribute("\'11/9/2019\'", "\'11/23/2019\'", "-1", new string[0])]
+        [Xunit.InlineDataAttribute("\'11/24/2019\'", "\'11/21/2019\'", "-1", new string[0])]
+        [Xunit.InlineDataAttribute("\'11/21/2019\'", "\'11/23/2019\'", "-1", new string[0])]
         [Xunit.InlineDataAttribute("\'11/9/2018\'", "\'11/30/2018\'", "-1", new string[0])]
-        [Xunit.InlineDataAttribute("\'11/9/2018\'", "\'11/21/2018\'", "-1", new string[0])]
-        [Xunit.InlineDataAttribute("\'11/9/2018\'", "\'11/23/2018\'", "-1", new string[0])]
-        [Xunit.InlineDataAttribute("\'11/21/2018\'", "\'11/23/2018\'", "-1", new string[0])]
-        [Xunit.InlineDataAttribute("\'11/21/2018\'", "\'11/21/2018\'", "-1", new string[0])]
-        [Xunit.InlineDataAttribute("\'11/23/2018\'", "\'11/23/2018\'", "-1", new string[0])]
-        [Xunit.InlineDataAttribute("\'11/23/2018\'", "\'11/21/2018\'", "-1", new string[0])]
-        [Xunit.InlineDataAttribute("\'11/22/2018\'", "\'11/26/2018\'", "-1", new string[0])]
         public virtual void FindAvailableRoom(string startdate, string enddate, string outcome, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Find available room", null, exampleTags);
@@ -99,7 +95,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 8
  testRunner.Given(string.Format("I have entered {0} and {1}", startdate, enddate), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
- testRunner.And("the room is already booked from \'11/21/2018\' to \'11/23/2018\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the room is already booked from \'11/21/2019\' to \'11/23/2019\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 10
  testRunner.When("I press button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 11

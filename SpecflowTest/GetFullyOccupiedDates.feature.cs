@@ -80,11 +80,11 @@ namespace SpecflowTest
         [Xunit.TheoryAttribute(DisplayName="Get fully occupied dates")]
         [Xunit.TraitAttribute("FeatureTitle", "GetFullyOccupiedDates")]
         [Xunit.TraitAttribute("Description", "Get fully occupied dates")]
-        [Xunit.InlineDataAttribute("\'12/9/2018\'", "\'12/10/2018\'", "0", new string[0])]
-        [Xunit.InlineDataAttribute("\'12/18/2018\'", "\'12/19/2018\'", "1", new string[0])]
-        [Xunit.InlineDataAttribute("\'12/18/2018\'", "\'12/22/2018\'", "3", new string[0])]
-        [Xunit.InlineDataAttribute("\'12/21/2018\'", "\'12/24/2018\'", "1", new string[0])]
-        [Xunit.InlineDataAttribute("\'12/22/2018\'", "\'12/23/2018\'", "0", new string[0])]
+        [Xunit.InlineDataAttribute("\'12/9/2019\'", "\'12/10/2019\'", "0", new string[0])]
+        [Xunit.InlineDataAttribute("\'12/19/2019\'", "\'12/19/2019\'", "1", new string[0])]
+        [Xunit.InlineDataAttribute("\'12/17/2019\'", "\'12/22/2019\'", "3", new string[0])]
+        [Xunit.InlineDataAttribute("\'12/21/2019\'", "\'12/24/2019\'", "1", new string[0])]
+        [Xunit.InlineDataAttribute("\'12/22/2019\'", "\'12/23/2019\'", "0", new string[0])]
         public virtual void GetFullyOccupiedDates(string startdate, string enddate, string outcome, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get fully occupied dates", null, exampleTags);
@@ -94,7 +94,7 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
  testRunner.Given(string.Format("I have typed {0} and {1}", startdate, enddate), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 8
- testRunner.And("the room from \'12/19/2018\' to \'12/21/2018\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("the room from \'12/19/2019\' to \'12/21/2019\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
  testRunner.When("I press buttonr", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 10
